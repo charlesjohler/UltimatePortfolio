@@ -10,6 +10,7 @@
 		C6163B7E26A1863100534FE6 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6163B7D26A1863100534FE6 /* CloudKit.framework */; };
 		C6163B8126A1875500534FE6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6163B8026A1875500534FE6 /* HomeView.swift */; };
 		C6163B8526A188CE00534FE6 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6163B8426A188CE00534FE6 /* ProjectView.swift */; };
+		C6743CCF26A1C20200F030B3 /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6743CCE26A1C20200F030B3 /* EditItemView.swift */; };
 		C682514D26A011D6007480F7 /* UltimatePortfolioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C682514C26A011D6007480F7 /* UltimatePortfolioApp.swift */; };
 		C682514F26A011D6007480F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C682514E26A011D6007480F7 /* ContentView.swift */; };
 		C682515126A011D7007480F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C682515026A011D7007480F7 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 		C6163B8026A1875500534FE6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C6163B8426A188CE00534FE6 /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
 		C61F988F26A1857800B69B46 /* UltimatePortfolio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UltimatePortfolio.entitlements; sourceTree = "<group>"; };
+		C6743CCE26A1C20200F030B3 /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
 		C682514926A011D6007480F7 /* UltimatePortfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UltimatePortfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C682514C26A011D6007480F7 /* UltimatePortfolioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltimatePortfolioApp.swift; sourceTree = "<group>"; };
 		C682514E26A011D6007480F7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				C6A5850E26A1B13000CC9D50 /* Project-CoreDataHelpers.swift */,
 				C682514C26A011D6007480F7 /* UltimatePortfolioApp.swift */,
 				C682514E26A011D6007480F7 /* ContentView.swift */,
+				C6743CCE26A1C20200F030B3 /* EditItemView.swift */,
 				C6163B8026A1875500534FE6 /* HomeView.swift */,
 				C6163B8426A188CE00534FE6 /* ProjectView.swift */,
 				C682515026A011D7007480F7 /* Assets.xcassets */,
@@ -179,6 +182,7 @@
 				C682514F26A011D6007480F7 /* ContentView.swift in Sources */,
 				C682514D26A011D6007480F7 /* UltimatePortfolioApp.swift in Sources */,
 				C6A5850D26A1B10600CC9D50 /* Item-CoreDataHelpers.swift in Sources */,
+				C6743CCF26A1C20200F030B3 /* EditItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,7 +240,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -291,7 +295,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

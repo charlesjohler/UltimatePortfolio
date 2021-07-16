@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HomeView: View {
+    static let tag: String? = "Home"
+    
     @EnvironmentObject var dataController: DataController
     
     
@@ -15,6 +17,7 @@ struct HomeView: View {
         NavigationView {
             VStack{
                 Button("Add Data") {
+                    dataController.deleteAll()
                   try? dataController.createSampleData()
                 }
                 .padding()
