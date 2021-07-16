@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6163B7E26A1863100534FE6 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6163B7D26A1863100534FE6 /* CloudKit.framework */; };
+		C6163B8126A1875500534FE6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6163B8026A1875500534FE6 /* HomeView.swift */; };
+		C6163B8526A188CE00534FE6 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6163B8426A188CE00534FE6 /* ProjectView.swift */; };
 		C682514D26A011D6007480F7 /* UltimatePortfolioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C682514C26A011D6007480F7 /* UltimatePortfolioApp.swift */; };
 		C682514F26A011D6007480F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C682514E26A011D6007480F7 /* ContentView.swift */; };
 		C682515126A011D7007480F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C682515026A011D7007480F7 /* Assets.xcassets */; };
@@ -16,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C6163B7D26A1863100534FE6 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		C6163B7F26A1866D00534FE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C6163B8026A1875500534FE6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C6163B8426A188CE00534FE6 /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
+		C61F988F26A1857800B69B46 /* UltimatePortfolio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UltimatePortfolio.entitlements; sourceTree = "<group>"; };
 		C682514926A011D6007480F7 /* UltimatePortfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UltimatePortfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C682514C26A011D6007480F7 /* UltimatePortfolioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltimatePortfolioApp.swift; sourceTree = "<group>"; };
 		C682514E26A011D6007480F7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -30,17 +38,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6163B7E26A1863100534FE6 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C6163B7C26A1863100534FE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6163B7D26A1863100534FE6 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C682514026A011D6007480F7 = {
 			isa = PBXGroup;
 			children = (
 				C682514B26A011D6007480F7 /* UltimatePortfolio */,
 				C682514A26A011D6007480F7 /* Products */,
+				C6163B7C26A1863100534FE6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,9 +73,13 @@
 		C682514B26A011D6007480F7 /* UltimatePortfolio */ = {
 			isa = PBXGroup;
 			children = (
+				C6163B7F26A1866D00534FE6 /* Info.plist */,
+				C61F988F26A1857800B69B46 /* UltimatePortfolio.entitlements */,
 				C6E85ED426A17008003EF15A /* DataController.swift */,
 				C682514C26A011D6007480F7 /* UltimatePortfolioApp.swift */,
 				C682514E26A011D6007480F7 /* ContentView.swift */,
+				C6163B8026A1875500534FE6 /* HomeView.swift */,
+				C6163B8426A188CE00534FE6 /* ProjectView.swift */,
 				C682515026A011D7007480F7 /* Assets.xcassets */,
 				C6E85ED126A16D0C003EF15A /* Main.xcdatamodeld */,
 				C682515226A011D7007480F7 /* Preview Content */,
@@ -143,8 +165,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6163B8526A188CE00534FE6 /* ProjectView.swift in Sources */,
 				C6E85ED326A16D0C003EF15A /* Main.xcdatamodeld in Sources */,
 				C6E85ED526A17008003EF15A /* DataController.swift in Sources */,
+				C6163B8126A1875500534FE6 /* HomeView.swift in Sources */,
 				C682514F26A011D6007480F7 /* ContentView.swift in Sources */,
 				C682514D26A011D6007480F7 /* UltimatePortfolioApp.swift in Sources */,
 			);
@@ -204,7 +228,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -259,7 +283,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -274,12 +298,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = UltimatePortfolio/UltimatePortfolio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"UltimatePortfolio/Preview Content\"";
 				DEVELOPMENT_TEAM = 77BP6XKUST;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UltimatePortfolio/Info.plist;
+				INFOPLIST_KEY_CFBundleExecutable = UltimatePortfolio;
+				INFOPLIST_KEY_CFBundleName = UltimatePortfolio;
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,12 +333,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = UltimatePortfolio/UltimatePortfolio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"UltimatePortfolio/Preview Content\"";
 				DEVELOPMENT_TEAM = 77BP6XKUST;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UltimatePortfolio/Info.plist;
+				INFOPLIST_KEY_CFBundleExecutable = UltimatePortfolio;
+				INFOPLIST_KEY_CFBundleName = UltimatePortfolio;
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -66,20 +66,33 @@ class DataController : ObservableObject {
         }
     }
     
-    func delete( _ object: NSManagedObjectContext){
-        if container.viewContext.hasChanges{
-            try? container.viewContext.save()
-        }
+    func delete( _ object: NSManagedObject){
+           container.viewContext.delete(object)
+            
     }
+ 
+    
     
     func deleteAll() {
+       // var res: Any
         let fetchRequest1: NSFetchRequest<NSFetchRequestResult> = Item.fetchRequest()
         let batchDeleteRequest1 = NSBatchDeleteRequest(fetchRequest: fetchRequest1)
         _ = try? container.viewContext.execute(batchDeleteRequest1)
         
-        let fetchRequest2: NSFetchRequest<NSFetchRequestResult> = Item.fetchRequest()
+        let fetchRequest2: NSFetchRequest<NSFetchRequestResult> = Project.fetchRequest()
         let batchDeleteRequest2 = NSBatchDeleteRequest(fetchRequest: fetchRequest2)
         _ = try? container.viewContext.execute(batchDeleteRequest2)
-
+       // print(res)
     }
+    
+//    func deleteAll() {
+//        let fetchRequest1: NSFetchRequest<NSFetchRequestResult> = Item.fetchRequest()
+//        let batchDeleteRequest1 = NSBatchDeleteRequest(fetchRequest: fetchRequest1)
+//        _ = try? container.viewContext.execute(batchDeleteRequest1)
+//
+//        let fetchRequest2: NSFetchRequest<NSFetchRequestResult> = Project.fetchRequest()
+//        let batchDeleteRequest2 = NSBatchDeleteRequest(fetchRequest: fetchRequest2)
+//        _ = try? container.viewContext.execute(batchDeleteRequest2)
+//
+//    }
 }
