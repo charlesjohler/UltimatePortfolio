@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct EditItemView: View {
+   
+    
     let item: Item
     
     @EnvironmentObject var dataController: DataController
@@ -46,8 +48,16 @@ struct EditItemView: View {
             }
         }
         .navigationTitle("Edit Item")
+        .onDisappear(perform: update)
     }
-                    
+    func update() {
+        item.project?.objectWillChange.send()
+        
+        item.title = title
+        item.detail = detail
+        item.priority = Int16(priority)
+        item.completed = completed
+    }
 }
 
                     

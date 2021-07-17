@@ -40,12 +40,13 @@ class DataController : ObservableObject {
     func createSampleData() throws {
         let viewContext = container.viewContext
         
-        for i in 1...5{
+        for i in 1...5 {
             let project = Project(context: viewContext)
             project.title = "Project \(i)"
             project.items = []
-            project.closed = Bool.random()
             project.creationDate = Date()
+            project.closed = Bool.random()
+            
 
             for j in 1...10  {
                 let item = Item(context: viewContext)
@@ -66,7 +67,7 @@ class DataController : ObservableObject {
         }
     }
     
-    func delete( _ object: NSManagedObject){
+    func delete(_ object: NSManagedObject) {
            container.viewContext.delete(object)
             
     }

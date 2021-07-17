@@ -18,12 +18,11 @@ struct HomeView: View {
             VStack{
                 Button("Add Data") {
                     dataController.deleteAll()
-                  try? dataController.createSampleData()
+                    try? dataController.createSampleData()
                 }
                 .padding()
                 Button("del Data") {
                     dataController.deleteAll()
-                        //     try? dataController.createSampleData()
                 }
             }
             .navigationTitle("Home")

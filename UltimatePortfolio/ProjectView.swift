@@ -27,19 +27,20 @@ struct ProjectView: View {
             List {
                 ForEach(projects.wrappedValue){ project in
                     Section(header: Text(project.projectTitle)){
+// for later
+//                        ForEach(project.projectItems, content: ItemRowView.init)
+//
                         ForEach(project.projectItems) { item in
-                            NavigationLink(destination: EditItemView(item: item)){
-                            Text(item.itemTitle)
-                            }
+                            ItemRowView(item: item)
                         }
                     }
                 }
             }
+        }
             .listStyle(InsetGroupedListStyle())
             .navigationTitle(showClosedProjects ? "Closed Projects" : "Open Projects")
-        }
-        
     }
+        
 }
 
 struct ProjectView_Previews: PreviewProvider {

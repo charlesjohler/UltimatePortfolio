@@ -15,6 +15,7 @@
 		C682514F26A011D6007480F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C682514E26A011D6007480F7 /* ContentView.swift */; };
 		C682515126A011D7007480F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C682515026A011D7007480F7 /* Assets.xcassets */; };
 		C682515426A011D7007480F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C682515326A011D7007480F7 /* Preview Assets.xcassets */; };
+		C6A47EE326A31BEF00079944 /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A47EE226A31BEF00079944 /* ItemRowView.swift */; };
 		C6A5850D26A1B10600CC9D50 /* Item-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A5850C26A1B10600CC9D50 /* Item-CoreDataHelpers.swift */; };
 		C6A5850F26A1B13000CC9D50 /* Project-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A5850E26A1B13000CC9D50 /* Project-CoreDataHelpers.swift */; };
 		C6E85ED326A16D0C003EF15A /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C6E85ED126A16D0C003EF15A /* Main.xcdatamodeld */; };
@@ -33,6 +34,7 @@
 		C682514E26A011D6007480F7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C682515026A011D7007480F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C682515326A011D7007480F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C6A47EE226A31BEF00079944 /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
 		C6A5850C26A1B10600CC9D50 /* Item-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		C6A5850E26A1B13000CC9D50 /* Project-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		C6E85ED226A16D0C003EF15A /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				C6743CCE26A1C20200F030B3 /* EditItemView.swift */,
 				C6163B8026A1875500534FE6 /* HomeView.swift */,
 				C6163B8426A188CE00534FE6 /* ProjectView.swift */,
+				C6A47EE226A31BEF00079944 /* ItemRowView.swift */,
 				C682515026A011D7007480F7 /* Assets.xcassets */,
 				C6E85ED126A16D0C003EF15A /* Main.xcdatamodeld */,
 				C682515226A011D7007480F7 /* Preview Content */,
@@ -178,6 +181,7 @@
 				C6E85ED326A16D0C003EF15A /* Main.xcdatamodeld in Sources */,
 				C6A5850F26A1B13000CC9D50 /* Project-CoreDataHelpers.swift in Sources */,
 				C6E85ED526A17008003EF15A /* DataController.swift in Sources */,
+				C6A47EE326A31BEF00079944 /* ItemRowView.swift in Sources */,
 				C6163B8126A1875500534FE6 /* HomeView.swift in Sources */,
 				C682514F26A011D6007480F7 /* ContentView.swift in Sources */,
 				C682514D26A011D6007480F7 /* UltimatePortfolioApp.swift in Sources */,
@@ -240,7 +244,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -295,7 +299,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
