@@ -20,6 +20,7 @@
 		C6A5850F26A1B13000CC9D50 /* Project-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A5850E26A1B13000CC9D50 /* Project-CoreDataHelpers.swift */; };
 		C6E85ED326A16D0C003EF15A /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C6E85ED126A16D0C003EF15A /* Main.xcdatamodeld */; };
 		C6E85ED526A17008003EF15A /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E85ED426A17008003EF15A /* DataController.swift */; };
+		C6FE703126A34A7B00167F3D /* Binding-OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FE703026A34A7B00167F3D /* Binding-OnChange.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		C6A5850E26A1B13000CC9D50 /* Project-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		C6E85ED226A16D0C003EF15A /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
 		C6E85ED426A17008003EF15A /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		C6FE703026A34A7B00167F3D /* Binding-OnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-OnChange.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				C6163B8026A1875500534FE6 /* HomeView.swift */,
 				C6163B8426A188CE00534FE6 /* ProjectView.swift */,
 				C6A47EE226A31BEF00079944 /* ItemRowView.swift */,
+				C6FE703026A34A7B00167F3D /* Binding-OnChange.swift */,
 				C682515026A011D7007480F7 /* Assets.xcassets */,
 				C6E85ED126A16D0C003EF15A /* Main.xcdatamodeld */,
 				C682515226A011D7007480F7 /* Preview Content */,
@@ -183,6 +186,7 @@
 				C6E85ED526A17008003EF15A /* DataController.swift in Sources */,
 				C6A47EE326A31BEF00079944 /* ItemRowView.swift in Sources */,
 				C6163B8126A1875500534FE6 /* HomeView.swift in Sources */,
+				C6FE703126A34A7B00167F3D /* Binding-OnChange.swift in Sources */,
 				C682514F26A011D6007480F7 /* ContentView.swift in Sources */,
 				C682514D26A011D6007480F7 /* UltimatePortfolioApp.swift in Sources */,
 				C6A5850D26A1B10600CC9D50 /* Item-CoreDataHelpers.swift in Sources */,
