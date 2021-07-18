@@ -9,7 +9,6 @@ import SwiftUI
 
 struct EditItemView: View {
    
-    
     let item: Item
     
     @EnvironmentObject var dataController: DataController
@@ -51,6 +50,7 @@ struct EditItemView: View {
      //   .onDisappear(perform: update)
         .onDisappear(perform: dataController.save)
     }
+   
     func update() {
         item.project?.objectWillChange.send()
         
@@ -59,6 +59,8 @@ struct EditItemView: View {
         item.priority = Int16(priority)
         item.completed = completed
     }
+    
+   
 }
 
                     
