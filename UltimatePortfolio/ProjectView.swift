@@ -30,16 +30,41 @@ struct ProjectView: View {
             List {
                 ForEach(projects.wrappedValue){ project in
                     Section(header: ProjectHeaderView(project: project)){
-// for later
-//                        ForEach(project.projectItems, content: ItemRowView.init)
-//
+                            // for later
+                            //                        ForEach(project.projectItems, content: ItemRowView.init)
+                            //
                         ForEach(project.projectItems) { item in
                             ItemRowView(item: item)
+                        }
+                        .onDelete { offsets in
+                            let allItems = project.projectItems
+                                //print(project.projectItems.count)
+                            
+                            for offset in offsets {
+                                let item = allItems[offset]
+                                dataController.delete(item)
+                            }
+                                //print(project.projectItems.count)
+                            
+                            dataController.save()
+                        }
+                        
+                        if showClosedProjects == false {
+                            Button {
+                                withAnimation {
+                                    let item = Item(context: managedObjectContext)
+                                    item.project = project
+                                    item.creationDate = Date()
+                                    dataController.save()
+                                }
+                            } label : {
+                                Label("Add new item", systemImage: "plus")
+                            }
                         }
                     }
                 }
             }
-        }
+            
             .listStyle(InsetGroupedListStyle())
             .navigationTitle(showClosedProjects ? "Closed Projects" : "Open Projects")
             .toolbar {
@@ -52,12 +77,13 @@ struct ProjectView: View {
                             dataController.save()
                         }
                     } label : {
-                        Label("AddProject", systemImage: "plus")
+                        Label("Add new Project", systemImage: "plus")
                     }
                 }
             }
+        }
     }
-        
+    
 }
 
 struct ProjectView_Previews: PreviewProvider {

@@ -9,7 +9,7 @@ import CoreData
 
 extension Item {
     var itemTitle: String {
-        title ?? ""
+        title ?? "New item"
     }
     
     var itemDetail: String {

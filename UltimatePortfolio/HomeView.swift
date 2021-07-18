@@ -23,6 +23,7 @@ struct HomeView: View {
                 .padding()
                 Button("del Data") {
                     dataController.deleteAll()
+                   // dataController.save()
                 }
             }
             .navigationTitle("Home")
