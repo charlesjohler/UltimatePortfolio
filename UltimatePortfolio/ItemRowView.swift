@@ -5,6 +5,8 @@
 //  Created by Charles Johler on 17.07.21.
 //
 
+
+import CoreData
 import SwiftUI
 
 struct ItemRowView: View {
